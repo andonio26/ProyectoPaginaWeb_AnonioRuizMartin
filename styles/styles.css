@@ -1,0 +1,281 @@
+:root {
+    --color-principal: #000000;
+    --color-fondo: #ffffff;
+    --color-secundario: #d43939;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Protest Strike", serif;
+    background-image: url("../images/fondo.webp");
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    border: 5px solid black;  
+    padding: 10px 20px;       
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;  
+    background-color: var(--color-secundario); 
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    color: var(--color-principal);
+}
+
+/* Centrado de la imagen (logo de la saga) */
+.saga {
+    width: auto;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px; 
+}
+
+/* Estilos de la navegación */
+nav {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;      
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;                
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+}
+
+nav a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Protest Strike", sans-serif;
+    padding: 10px 0;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1); 
+}
+
+/* Estilos de las imágenes dentro de los enlaces */
+.planeta, .ninten, .ness, .lucas, .itoi, .formulario {
+    height: 80px;
+    object-fit: contain;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.planeta:hover, .ninten:hover, .ness:hover, .lucas:hover, .itoi:hover, .formulario:hover {
+    transform: scale(1.1); 
+}
+
+/* Imágenes de la página de Shigesato Itoi */
+.itoi-saturn {
+    width: 100%; 
+    max-width: 300px;  
+    margin: 20px auto; 
+    display: block;  
+}
+.starman {
+    width: 100%; 
+    max-width: 200px;  
+    margin: 20px auto; 
+    display: block;  
+}
+
+/* Imágenes de los sprites */
+.sprite {
+    width: 100%; 
+    max-width: 200px;  
+    margin: 20px auto; 
+    display: block;  
+}
+main {
+    display: flex; 
+    flex-direction: column; 
+    padding: 20px;
+    flex: 1;
+}
+
+main section {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    font-size: 20px; 
+    padding: 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+/* Gifs del inicio de la pagina */
+.inicio-gif {
+    width: 100%; 
+    max-width: 100px; 
+    margin: 20px auto; 
+    display: block; 
+}
+
+.MOTHER-gif {
+    width: 100%; 
+    max-width: 250px; 
+    margin: 20px auto; 
+    display: block; 
+}
+/* Gifs de la página MOTHER */
+.intro-gif {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 20px auto; 
+    display: block; 
+}
+.intro {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 20px auto; 
+    display: block; 
+}
+/* Gifs de los formularios */
+.saturn-gif {
+    width: 100%; 
+    max-width: 50px; 
+    margin: 20px auto; 
+    display: block; 
+}
+
+.beisbol-gif {
+    width: 100%; 
+    max-width: 120px; 
+    margin: 20px auto; 
+    display: block; 
+}
+
+.serpicuerda-gif {
+    width: 100%; 
+    max-width: 100px;  
+    margin: 20px auto; 
+    display: block; 
+}
+
+.wess-gif {
+    width: 100%; 
+    max-width: 80px; 
+    margin: 20px auto; 
+    display: block; 
+}
+/* pie de página */
+footer {
+    text-align: center;
+    font-size: 1.0rem;
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+    padding: 0.5rem;
+    border: 5px solid black;
+    margin-top: auto;
+}
+
+/* Formulario */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form-section {
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%; 
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid  var(--color-principal);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo de los radios y checkbox */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-terciario);
+}
+
+/* Para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; 
+    }
+
+    nav ul {
+        flex-direction: column;    
+    }
+
+    nav ul li {
+        align-items: flex-start; 
+    }
+
+    .form-section {
+        width: 100%; 
+    }
+}
+
+/* Para pantallas menores a 480px  */
+@media (max-width: 480px) {
+    .saga {
+        height: 50px; 
+    }
+
+    nav a {
+        font-size: 16px; 
+    }
+
+    input, textarea, select, button {
+        font-size: 14px; 
+    }
+}

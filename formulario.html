@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto pagina web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+     <!-- Contenedor principal del encabezado y navegación -->
+     <header class="header-container">
+        <img src="images/MotherSeriesLogo.webp" alt="Nombre de la saga" class="saga">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/planeta.png" alt="planeta" class="planeta">
+                        <br>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="mother.html">
+                        <img src="images/ninten.webp" alt="Ninten" class="ninten">
+                        <br>
+                        MOTHER
+                    </a>
+                </li>
+                <li>
+                    <a href="mother2.html">
+                        <img src="images/Modelo_Ness.webp" alt="Ness" class="ness">
+                        <br>
+                        MOTHER 2
+                    </a>
+                </li>
+                <li>
+                    <a href="mother3.html">
+                        <img src="images/Lucas_SSB4.webp" alt="Lucas" class="lucas">
+                        <br>
+                        MOTHER 3
+                    </a>
+                </li>
+                <li>
+                    <a href="itoi.html">
+                        <img src="images/itoi.png" alt="itoi" class="itoi">
+                        <br>
+                        Shigesato Itoi
+                    </a>   
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div class="form-container">
+                <!-- Datos personales -->
+                <div class="form-section">
+                    <h2>Datos personales</h2>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre"  maxlength="20" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+    
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="20"   pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+    
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="^[0-9]{9}$" required>
+    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email"  maxlength="100" required>
+
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" maxlength="50"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+    
+                    <label for="pais">País</label>
+                    <input type="text" id="pais" name="pais" maxlength="50"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+
+                    <img src="images/serpicuerda.webp" alt="GIF de formulario" class="serpicuerda-gif">
+                
+                </div>
+    
+                <!-- Aficiones -->
+                <div class="form-section">
+                    <h2>Juegos de la saga</h2>
+                    <label for="aficiones">Selecciona cual es tu juego favorito </label>
+                    <select id="aficiones" name="aficiones[]" multiple required>
+                        <option value="deporte">MOTHER/Earthbound beginnings</option>
+                        <option value="leer">MOTHER 2/Earthbound</option>
+                        <option value="viajar">MOTHER 3</option>
+                    </select>
+                    <img src="images/wess.gif" alt="GIF de formulario" class="wess-gif">
+                </div>
+    
+                <!-- Gustos personales -->
+                <div class="form-section">
+                    <h2>Opinion de la pagina</h2>  
+                    <p>Selecciona si te ha parecido util la informacion que has leido en esta pagina</p>
+                    <label for="cine-si">Si</label>
+                    <input type="radio" id="util-si" name="cine" value="si" required>
+                    <label for="cine-no">No</label>
+                    <input type="radio" id="util-no" name="cine" value="no" required>
+
+                    <p>Selecciona si crees que volveras a visitar esta pagina</p>
+                    <label for="si-volvere">Si</label>
+                    <input type="radio" id="si-volvere" name="volver" value="si-volvere" required>
+                    <label for="no-volvere">No</label>
+                    <input type="radio" id="no-volvere" name="volver" value="no-volvere" required>
+                    <img src="images/saturn.gif" alt="GIF de formulario" class="saturn-gif">
+                </div>
+    
+                <!-- Sugerencias -->
+                <div class="form-section">
+                    <h2>Sugerencias</h2>
+                    <label for="sugerencias">Cuéntanos tus sugerencias para mejorar esta pagina web:</label>
+                    <textarea id="sugerencias" name="sugerencias" rows="4" cols="50" maxlength="700" placeholder="Escribe tus sugerencias aquí..."></textarea>
+                    <img src="images/beisbol.gif" alt="GIF de formulario" class="beisbol-gif">
+                </div>
+    
+                <!-- Aviso de privacidad y consentimiento -->
+                <div class="form-section">
+                    <p>
+                        <input type="checkbox" id="consentimiento" name="consentimiento" required>
+                        <label for="consentimiento">He leído y acepto la política de privacidad. Mis datos podrán ser almacenados y procesados.</label>
+                    </p>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </main>  
+     <!-- Pie de página sobre los derechos de autor -->
+    <footer>
+        <p>&copy; Página creada por Antonio Ruiz Martin</p>
+    </footer>  
+</body>
+</html>
